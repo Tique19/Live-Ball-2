@@ -1,0 +1,10 @@
+ONCE THE CLIENT CAN REFRESH FROM THE KAFKA QUEUE!!!!!
+    need to establish a consumer web server (server side w/ socket.io) and then use socket.io to push data to the client
+1. On the server side, set a timer for the game, send a message at half time (1 min), 
+send a message at full time and stop the game from running
+
+2. Create a hashmap of games (keeping track of scores, and game status), that will be accessed by the client for updating App.js, 
+use Kafka to update the hashMap values (client side)
+
+3. using the data in the hashMap create a separate component to display the games with the 
+greatest and lowest score difference using a max and min heap
